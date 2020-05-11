@@ -1,4 +1,10 @@
+body {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 .heading {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(200, 212, 21);
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
     font-size: 2rem;
@@ -7,6 +13,7 @@
 }
 
 .searcher {
+    background-color: rgba(0, 0, 0, 0.7);
     margin-top: 2rem;
     margin-bottom: 2rem;
     text-align: left;
