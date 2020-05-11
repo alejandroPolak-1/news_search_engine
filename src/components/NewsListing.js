@@ -4,8 +4,11 @@ import New from './New'
 const NewsListing = ({ news }) => {
   return (
     <div className="row">
-      {news.map((e) => (
-        <New />
+      {news.map((pieceOfNews) => (
+        <New 
+        key={pieceOfNews.url}
+        pieceOfNews= {pieceOfNews}
+        />
       ))}
     </div>
   )
