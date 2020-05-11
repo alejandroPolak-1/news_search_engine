@@ -4,8 +4,20 @@ import useSelect from '../hooks/useSelect'
 
 const Form = () => {
 
- //use own custom hook
- const [category, SelectNews] = useSelect();
+//Option for select categories
+const OPTIONS = [
+    {value:'general', label : 'General'},
+    {value:'business', label : 'Business'},
+    {value:'technology', label : 'Technology'},
+    {value:'health', label : 'Health'},
+    {value:'entertainment', label : 'Entertainment'},
+    {value:'sports', label : 'Sports'},
+    {value:'science', label : 'Science'},
+]
+
+ //use own custom hook(for default category general, stateinictial=general--leter other)
+ const [category, SelectNews] = useSelect('general', OPTIONS);
+
 
   return (
     <div className={`${styles.searcher} row`}>
@@ -29,3 +41,4 @@ const Form = () => {
 }
 
 export default Form
+
