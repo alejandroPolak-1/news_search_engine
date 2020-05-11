@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Form.module.css'
 import useSelect from '../hooks/useSelect'
 
-const Form = ({ setCategories }) => {
+const Form = ({ setCategory }) => {
   //Option for select categories
   const OPTIONS = [
     { value: 'general', label: 'General' },
@@ -20,7 +20,7 @@ const Form = ({ setCategories }) => {
   //(searchNews)submit to form, pass category to App.js (category have access to own hooks)
   const handleSubmit = (e) => {
     e.preventDefault()
-    setCategories(category)
+    setCategory(category)
   }
 
   return (
